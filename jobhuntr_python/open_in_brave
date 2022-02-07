@@ -1,0 +1,2 @@
+jobs=$(grep "^..*$" jobs.txt | sed "s/.*|.*|.*| //")
+for job in $jobs; do brave "$job"; done
